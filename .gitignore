@@ -1,0 +1,15 @@
+*.aux
+*.bbl
+*.blg
+/*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.gz
+.latexmkrc
+*.dvi
+.vscode/settings.json
+
+#tcam-atc23.pdf
+.DS_Store
+

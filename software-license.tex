@@ -1,0 +1,151 @@
+\documentclass{jsarticle}
+\title{ソフトウェアライセンス}
+\author{}
+\date{2024/01/04}
+
+\usepackage{url}
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+
+\item Copyright: 著作権
+\item License: 利用許諾
+
+ソフトウェアの著作権を持つものは、そのソフトウェアのユーザへの
+利用許諾を自由に決めることができる。
+
+\item Dual-Licensing
+
+複数の利用許諾(license)で
+ユーザに提供することを、dual-license と呼ぶ。
+例えば、MySQL は dual-licensing していて、コミュニティ版と商用版がある。
+X11も有名。GitLab CE/EE も。
+
+\item Free Software / Open-source Software
+\begin{itemize}
+\item \url{https://www.gnu.org/philosophy/free-sw.html}
+\end{itemize}
+
+タダ（無償）という意味ではない、真に自由なフリーソフトウェアとは
+何か、という思想。ユーザがプログラム(開発)の恩恵を得られる権利を
+維持することを自由と呼ぶ、というような思想。
+ソースが無いと過去の開発の恩恵を得られないので、ソースはオープンに
+しよう、という意味で、フリーソフトウェアとオープンソースソフトウェアの
+考え方はほぼ同義、ほぼ同一。
+
+\item Copyleft
+\begin{itemize}
+\item \url{https://www.gnu.org/licenses/copyleft.ja.html}
+\end{itemize}
+
+プログラムの著者は著作権(copyrights)を主張せず、
+パブリックドメインにする（公共に所属させる）べきである、とする思想。
+Free Software / Open-source Software の考えの根底にある思想。
+copyright -- all rights reserved.（著作権 -- 全ての権利は留保されている）を
+揶揄した、
+copyleft -- all rights reversed. （コピーレフト -- 全ての右は逆転されている）
+に由来する。
+ユーザの利用できる権利を守るため、該当プログラムを利用した派生物は全て、
+ソースを公開するなどの同じ制限と利用許諾にしなければならない。
+GPL(GNU Public License)が有名。
+ユーザの権利を守ろうとする余り、プログラムの派生物にも同じ
+コピーレフト性という強い制限を求めるため、GPL 汚染やライセンス感染と呼ばれる。
+開発物のソースをすべて公開しなければならないという制限が、
+多くのビジネスモデルと適合しない、と言われる。
+
+\item Permissiveライセンス
+\begin{itemize}
+\item \url{https://opensource.org/faq/#permissive}
+\end{itemize}
+
+GPLのような制限の強いコピーレフトライセンスに対して、
+MITやBSD 2/3-Clause の寛容なライセンスは Permissive ライセンスと呼ばれる。
+このライセンスのソフトウェアも、正しく Free Software / Open-source Software
+であるとされる。
+著作権表示を消すな、大学名を販促に使うな、というような
+緩い制限の2/3項目を守れば、商用や改変・再配布を含め、
+どのような利用もできるライセンス。Apacheライセンスもこれ。
+
+\item Selling Exceptions
+\begin{itemize}
+\item \url{https://www.gnu.org/philosophy/selling-exceptions.en.html}
+\end{itemize}
+
+真に自由なコピーレフトライセンスを使って、
+ビジネス（商用利用）ができるようにしよう、
+という、GNUの祖ストールマン(RMS)の例外規定。
+GNUより前からあるX11を許すためには、、、みたいなこと言ってる。
+
+\item Commons Clause
+\begin{itemize}
+\item \url{https://commonsclause.com/}
+\end{itemize}
+
+オープンソースライセンスの前段にこれを付ければ、
+商用利用だけを禁止できるのでは？という提案。
+かなり批判された模様。
+
+\item Open Core
+\begin{itemize}
+\item \url{https://en.wikipedia.org/wiki/Open-core_model}
+\end{itemize}
+
+dual-licensing でビジネス・商用利用もしつつ、
+ベース部分を Open-source software とするビジネスモデル。
+Kafka, Cassandra, Oracle/MySQL, Eucalyptus, GitLab, Redis
+などが該当するらしい。
+
+\item Source-available Software
+\begin{itemize}
+\item \url{https://en.wikipedia.org/wiki/Source-available_software}
+\end{itemize}
+
+ソースを公開しているが、Free Software / Open-source Software に
+そぐわないライセンスでソフトウェア開発・提供しているモデル。
+Elasticがopen-core からこちらに移行した模様。
+Redisのplug-in部分もこのモデルのライセンス(Redis Source Available License)。
+HasiCorp/Terraformもこのモデル(Business Source License (BSL))。
+MongoDBのSSPLもソース公開だがフリー・オープンソースでない商用ライセンス
+であり、このモデル。
+
+\item 伽藍とバザール
+\begin{itemize}
+\item \url{http://www.catb.org/~esr/writings/cathedral-bazaar/}
+\end{itemize}
+
+荘厳な伽藍を建築するのではなくて、バザーのように人々に勝手に
+やらせよう、というソフトウェア開発の方針の思想。
+FRRouting (Free-range Routing: 放し飼いのルーティング)は
+バザーと同じような思想でやっていると思われる。
+
+\item LGPL
+\begin{itemize}
+\item \url{https://www.gnu.org/licenses/lgpl-3.0.html}
+\end{itemize}
+
+Link するだけのプログラムにはGPLを求めないような、
+Lesser（劣等）GPL。ライブラリのために生まれた。
+
+\item Creative Commons
+\begin{itemize}
+\item \url{https://creativecommons.jp/licenses/}
+\end{itemize}
+
+文書のためのライセンス体系、部品になっていて組み合わせで使える。
+CC BY-NC-ND(BY: 著作権表示、NC: 非商用、ND: 改変禁止)など。
+FAQで、ソフトウェアにCC付けれるが、お勧めしない、と書いてある。
+
+\item PolyForm
+\begin{itemize}
+\item \url{https://polyformproject.org/}
+\end{itemize}
+
+ソフトウェアに適応できるCCのようなものらしい。
+非商用、とかある模様。
+
+\end{itemize}
+
+\end{document}
+
